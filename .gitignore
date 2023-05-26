@@ -1,0 +1,24 @@
+# Ignore build output
+public/
+
+# Ignore Zola cache
+.zola/
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore temporary files
+*.tmp
+
+# Ignore backup files
+*~
+
+# Ignore log files
+*.log
+
+# Ignore cache files
+.cache/
