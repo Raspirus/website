@@ -1,6 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { Footer } from "../components/Footer.tsx";
 import IconDownload from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/download.tsx"
+import Navbar from "../components/Navbar.tsx";
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
         alt="bg"
         class="absolute top-0 left-0 w-full min-h-screen -z-10 bg-white-900 object-cover"
       />
+      <Navbar active="/" />
       <div class="flex justify-center items-center h-screen text-gray-600">
         <div>
           <div class="mb-8 mx-8 text-center">
