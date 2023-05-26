@@ -15,13 +15,8 @@ export default function Home() {
         <link rel="manifest" href="/icons/site.webmanifest" />
         <title>Raspirus</title>
       </Head>
-      <img
-        src="/background.png"
-        alt="bg"
-        class="absolute top-0 left-0 w-full min-h-screen -z-10 bg-white-900 object-cover"
-      />
       <Navbar active="/" />
-      <div class="flex justify-center items-center h-screen text-gray-600">
+      <div class="flex justify-center items-center h-screen text-gray-600 bg-default">
         <div>
           <div class="mb-8 mx-8 text-center">
             <img
