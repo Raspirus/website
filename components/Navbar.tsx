@@ -13,7 +13,7 @@ export default function Header({ active }: Props) {
   return (
     <div class="bg-white w-full py-6 px-8 flex flex-col md:flex-row gap-4">
       <div class="flex items-center flex-1">
-        <img src="/logo.svg" class="w-6 h-6" />
+        <img alt="Raspirus Logo" src="/logo.svg" class="w-6 h-6" />
         <div class="text-2xl  ml-1 font-bold">
           Raspirus
         </div>
