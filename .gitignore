@@ -1,24 +1,30 @@
-# Ignore build output
-public/
+# Deno
+.deno_dir/
 
-# Ignore Zola cache
-.zola/
+# Fresh
+.development/
 
-# Ignore editor-specific files
+# Build artifacts
+dist/
+
+# IDE-specific files
 .vscode/
 .idea/
 
-# Ignore macOS-specific files
-.DS_Store
+# Dependency directories
+/deps/
+/.deno/
 
-# Ignore temporary files
-*.tmp
-
-# Ignore backup files
-*~
-
-# Ignore log files
+# Logs
 *.log
 
-# Ignore cache files
-.cache/
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
