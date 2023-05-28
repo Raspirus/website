@@ -1,9 +1,6 @@
-// 
-// Credits section: 
-//
 import Header from "../components/Header.tsx";
 import Navbar from "../components/Navbar.tsx";
-
+// Add better design
 export default function About() {
   return (
     <>

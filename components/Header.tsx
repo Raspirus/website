@@ -21,6 +21,7 @@ export default function Header({title}: Headerprops) {
             <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
             <link rel="manifest" href="/icons/site.webmanifest" />
             
+            <meta name="google-site-verification" content="I002awkSsAy6ofmThQ2X8p3j8yehRxYqEOQd8orA93A" />
             <link rel="stylesheet" href="style/main.css"/>
             <title>{title}</title>
       </Head>

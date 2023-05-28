@@ -3,8 +3,8 @@ import IconDownload from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/downloa
 import Navbar from "../components/Navbar.tsx";
 import Header from "../components/Header.tsx";
 
+// Add decent background
 export default function Home() {
-
   return (
     <>
       <Header title="Raspirus" />

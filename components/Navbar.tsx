@@ -3,7 +3,7 @@ import IconExternalLink from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/ext
 type Props = {
   active: string;
 };
-
+// TODO: Add Hamburger for mobile devices
 export default function Navbar({ active }: Props) {
   const menus = [
     { name: "Home", href: "/" },
