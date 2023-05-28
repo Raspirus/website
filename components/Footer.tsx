@@ -13,7 +13,6 @@ export default function Footer() {
         <a
           class="font-bold flex justify-start items-center cursor-pointer gap-1 hover:underline focus:underline"
           href="https://github.com/Raspirus/Raspirus"
-          rel="noopener noreferrer"
           target="_blank"
         >
           <svg

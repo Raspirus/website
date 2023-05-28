@@ -8,9 +8,8 @@ export default function Home() {
   return (
     <>
       <Header title="Raspirus" />
-      <div class="bg-default h-screen">
         <Navbar active="/" />
-        <div class="flex justify-center items-center mt-8 text-gray-600">
+        <div class="flex justify-center items-center my-8 text-gray-600">
           <div>
             <div class="mb-8 mx-8 text-center">
               <img
@@ -27,7 +26,7 @@ export default function Home() {
             </div>
             <div class="flex justify-center items-center flex-col">
               <a
-                href="https://github.com/Raspirus/Raspirus/releases/latest"
+                href="/downloads"
                 class="bg-gray-900 text-gray-100 hover:text-white shadow font-bold text-sm py-3 px-4 rounded flex justify-start items-center cursor-pointer mt-2"
               >
                 <IconDownload class="mr-4 w-6 h-6" />
@@ -37,7 +36,6 @@ export default function Home() {
             <Footer />
           </div>
         </div>
-      </div>
     </>
   )
 }

@@ -4,7 +4,7 @@ type Headerprops = {
     title: string,
 };
 
-export default function Header(title: Headerprops) {
+export default function Header({title}: Headerprops) {
     return (
         <Head>
             <meta name="title" content="Raspirus" />
@@ -20,6 +20,8 @@ export default function Header(title: Headerprops) {
             <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
             <link rel="manifest" href="/icons/site.webmanifest" />
+            
+            <link rel="stylesheet" href="style/main.css"/>
             <title>{title}</title>
       </Head>
     );

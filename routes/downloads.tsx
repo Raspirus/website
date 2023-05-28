@@ -65,8 +65,7 @@ export default function Downloads({ data }: PageProps<GithubData | null>) {
     const desc = `Version: ${data?.version}\nDate: ${formattedDate}`;
     return (
         <>
-            <Header title="Raspirus" />
-            <div class="bg-default h-screen">
+            <Header title="Downloads | Raspirus" />
                 <Navbar active="/downloads" />
                 <div class="flex flex-wrap">
                     <Download title="Windows" image="img/windows.png" desc={desc} action={data?.win_link ?? ''} size={data?.win_size ?? 0}
@@ -78,7 +77,6 @@ export default function Downloads({ data }: PageProps<GithubData | null>) {
                     <Download title="Source code" image="img/github.png" desc={desc} action={data?.github_link ?? ''} size={data?.github_size ?? 0}
                         action2={null} size2={null} />
                 </div >
-            </div>
         </>
     );
 }
