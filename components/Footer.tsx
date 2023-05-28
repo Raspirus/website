@@ -1,4 +1,4 @@
-export function Footer() {
+export default function Footer() {
     return (
       <div class="mt-16 flex justify-center items-center border-none bg-transparent text-black gap-4">
         <a href="https://fresh.deno.dev">
