@@ -8,6 +8,6 @@ export default {
       backgroundImage: (_theme) => ({
         default: "url('/background.png')",
       }),
-    }
-  }
+    },
+  },
 } as Options;

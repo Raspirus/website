@@ -1,4 +1,4 @@
-import IconExternalLink from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/external-link.tsx"
+import IconExternalLink from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/external-link.tsx";
 
 type Props = {
   active: string;
@@ -8,8 +8,12 @@ export default function Navbar({ active }: Props) {
   const menus = [
     { name: "Home", href: "/" },
     { name: "Downloads", href: "/downloads" },
-    { name: "Docs", href: "https://raspirus.github.io/docs/", target: "_blank" },
-    { name: "About", href: "/about" }
+    {
+      name: "Docs",
+      href: "https://raspirus.github.io/docs/",
+      target: "_blank",
+    },
+    { name: "About", href: "/about" },
   ];
 
   return (
@@ -25,11 +29,17 @@ export default function Navbar({ active }: Props) {
           <li>
             <a
               href={menu.href}
-              target={menu.target ? menu.target : '_self'}
+              target={menu.target ? menu.target : "_self"}
               class="text-gray-500 hover:text-gray-700 py-1"
             >
               <div className="flex items-center">
-                <span class={(menu.href === active ? "font-bold border-b-2 border-gray-500" : "")}>{menu.name}</span>
+                <span
+                  class={menu.href === active
+                    ? "font-bold border-b-2 border-gray-500"
+                    : ""}
+                >
+                  {menu.name}
+                </span>
                 {menu.target && <IconExternalLink className="w-4 h-4" />}
               </div>
             </a>
