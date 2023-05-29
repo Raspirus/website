@@ -17,10 +17,10 @@ export default function Navbar({ active }: Props) {
   ];
 
   return (
-    <div class="bg-white w-full py-6 px-8 flex flex-col md:flex-row gap-4 border-b-2 border-black">
+    <div class="bg-black w-full py-6 px-8 flex flex-col md:flex-row gap-4">
       <div class="flex items-center flex-1">
         <img alt="Raspirus Logo" src="/logo.svg" class="w-8 h-8" />
-        <a href="/" class="text-2xl ml-1 font-bold">
+        <a href="/" class="text-2xl text-white ml-1 font-bold">
           Raspirus
         </a>
       </div>
@@ -30,12 +30,12 @@ export default function Navbar({ active }: Props) {
             <a
               href={menu.href}
               target={menu.target ? menu.target : "_self"}
-              class="text-gray-500 hover:text-gray-700 py-1"
+              class="text-white hover:text-mainred py-1"
             >
               <div className="flex items-center">
                 <span
                   class={menu.href === active
-                    ? "font-bold border-b-2 border-gray-500"
+                    ? "font-bold border-b-2 border-maingreen"
                     : ""}
                 >
                   {menu.name}

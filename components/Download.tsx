@@ -28,7 +28,7 @@ export default function Download(
       </h2>
 
       <a href={action}>
-        <button class="bg-blue-500 text-white px-4 py-2 mt-10">
+        <button class="bg-mainred text-white px-4 py-2 mt-10">
           {getFileExtension(action)?.toUpperCase()} -{" "}
           {(size / 1048576).toFixed(2)}MB
         </button>
@@ -37,7 +37,7 @@ export default function Download(
       {action2 &&
         (
           <a href={action2}>
-            <button class="bg-blue-500 text-white px-4 py-2 mt-2">
+            <button class="bg-maingreen text-white px-4 py-2 mt-2">
               {getFileExtension(action2)?.toUpperCase()} -{" "}
               {size2 ? (size2 / 1048576).toFixed(2) : "Error "}MB
             </button>

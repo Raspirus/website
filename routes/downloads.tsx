@@ -62,52 +62,53 @@ export default function Downloads({ data }: PageProps<GithubData | null>) {
   const month = (data?.date.getMonth() ?? 0 + 1).toString(); // Months are zero-based, so add 1
   const year = data?.date.getFullYear().toString();
 
-  const formattedDate = `${day?.padStart(2, "0")}-${
-    month.padStart(2, "0")
-  }-${year}`;
+  const formattedDate = `${day?.padStart(2, "0")}-${month.padStart(2, "0")
+    }-${year}`;
 
   const desc = `Version: ${data?.version}\nDate: ${formattedDate}`;
   return (
     <>
       <Header title="Downloads | Raspirus" />
       <Navbar active="/downloads" />
-      <div class="flex flex-wrap">
-        <Download
-          title="Windows"
-          image="img/windows.png"
-          desc={desc}
-          action={data?.win_link ?? ""}
-          size={data?.win_size ?? 0}
-          action2={data?.win_msi_link ?? ""}
-          size2={data?.win_msi_size ?? 0}
-        />
-        <Download
-          title="macOS"
-          image="img/apple.png"
-          desc={desc}
-          action={data?.mac_link ?? ""}
-          size={data?.mac_size ?? 0}
-          action2={null}
-          size2={null}
-        />
-        <Download
-          title="Debian/Linux"
-          image="img/linux.png"
-          desc={desc}
-          action={data?.linux_link ?? ""}
-          size={data?.linux_size ?? 0}
-          action2={data?.linux_deb_link ?? ""}
-          size2={data?.linux_deb_size ?? 0}
-        />
-        <Download
-          title="Source code"
-          image="img/github.png"
-          desc={desc}
-          action={data?.github_link ?? ""}
-          size={data?.github_size ?? 0}
-          action2={null}
-          size2={null}
-        />
+      <div class="min-h-screen bg-cover bg-center bg-no-repeat bg-default">
+        <div class="flex flex-wrap">
+          <Download
+            title="Windows"
+            image="img/windows.png"
+            desc={desc}
+            action={data?.win_link ?? ""}
+            size={data?.win_size ?? 0}
+            action2={data?.win_msi_link ?? ""}
+            size2={data?.win_msi_size ?? 0}
+          />
+          <Download
+            title="macOS"
+            image="img/apple.png"
+            desc={desc}
+            action={data?.mac_link ?? ""}
+            size={data?.mac_size ?? 0}
+            action2={null}
+            size2={null}
+          />
+          <Download
+            title="Debian/Linux"
+            image="img/linux.png"
+            desc={desc}
+            action={data?.linux_link ?? ""}
+            size={data?.linux_size ?? 0}
+            action2={data?.linux_deb_link ?? ""}
+            size2={data?.linux_deb_size ?? 0}
+          />
+          <Download
+            title="Source code"
+            image="img/github.png"
+            desc={desc}
+            action={data?.github_link ?? ""}
+            size={data?.github_size ?? 0}
+            action2={null}
+            size2={null}
+          />
+        </div>
       </div>
     </>
   );
