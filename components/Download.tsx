@@ -15,7 +15,7 @@ export default function Download(
     url.substring(url.lastIndexOf("/") + 1).split(".").pop();
 
   return (
-    <div class="p-8 w-full md:w-1/2 lg:w-1/4 h-screen md:h-1/2 lg:h-full flex flex-col justify-center items-center">
+    <div class="p-8 w-full md:w-1/2 lg:w-1/4 h-1/4 md:h-1/2 lg:h-full flex flex-col justify-center items-center">
       <img src={image} alt="OS System Image" class="h-48" />
 
       <h1 class="mt-2">

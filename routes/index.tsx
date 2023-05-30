@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <Header title="Raspirus" />
-      <Navbar active="/" />
       <div class="min-h-screen bg-cover bg-center bg-no-repeat bg-default">
+        <Navbar active="/" />
         <div class="flex justify-center items-center py-8 text-gray-600">
           <div>
             <div class="mb-8 mx-8 text-center">

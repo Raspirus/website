@@ -62,15 +62,16 @@ export default function Downloads({ data }: PageProps<GithubData | null>) {
   const month = (data?.date.getMonth() ?? 0 + 1).toString(); // Months are zero-based, so add 1
   const year = data?.date.getFullYear().toString();
 
-  const formattedDate = `${day?.padStart(2, "0")}-${month.padStart(2, "0")
-    }-${year}`;
+  const formattedDate = `${day?.padStart(2, "0")}-${
+    month.padStart(2, "0")
+  }-${year}`;
 
   const desc = `Version: ${data?.version}\nDate: ${formattedDate}`;
   return (
     <>
       <Header title="Downloads | Raspirus" />
-      <Navbar active="/downloads" />
       <div class="min-h-screen bg-cover bg-center bg-no-repeat bg-default">
+        <Navbar active="/downloads" />
         <div class="flex flex-wrap">
           <Download
             title="Windows"

@@ -5,8 +5,8 @@ export default function About() {
   return (
     <>
       <Header title="About | Raspirus" />
-      <Navbar active="/about" />
       <div class="min-h-screen bg-cover bg-center bg-no-repeat bg-default">
+        <Navbar active="/about" />
         <div className="flex h-full">
           <div className="p-8 w-8/12">
             <table className="table-auto w-full">
