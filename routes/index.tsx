@@ -22,7 +22,7 @@ export default function Home() {
                 Raspirus
               </span>
               <span class="block text-white text-lg -mb-1.5">
-                A lightweight and intuitive Virusscanner
+                A lightweight and intuitive Virusscanner - Currently in BETA
               </span>
             </div>
             <div class="flex justify-center items-center flex-col">
