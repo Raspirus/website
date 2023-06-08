@@ -2,12 +2,15 @@ import IconHeart from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/heart.tsx"
 
 export default function Footer() {
   return (
-    <div class="mt-16 flex justify-center items-center border-none bg-transparent text-black gap-4">
-      <a href="https://github.com/sponsors/Raspirus" target="_blank" className="bg-gray-600 p-2 flex items-center rounded">
+    <div itemProp="funding" class="mt-16 flex justify-center items-center border-none bg-transparent text-black gap-4">
+      <a
+        href="https://github.com/sponsors/Raspirus"
+        target="_blank"
+        className="bg-gray-600 p-2 flex items-center rounded"
+      >
         <IconHeart class="w-6 h-6 text-red-500 mr-2" />
         <p class="m-0 text-white">Sponsor this project</p>
       </a>
-
 
       <a
         class="font-bold flex justify-start items-center cursor-pointer gap-1 hover:underline focus:underline"

@@ -10,7 +10,7 @@ export default function Home() {
       <Header title="Raspirus" />
       <div class="min-h-screen bg-cover bg-center bg-no-repeat bg-default">
         <Navbar active="/" />
-        <div class="flex justify-center items-center py-8 text-gray-600">
+        <div itemScope itemType="https://schema.org/SoftwareApplication" class="flex justify-center items-center py-8 text-gray-600">
           <div>
             <div class="mb-8 mx-8 text-center">
               <img
@@ -18,10 +18,10 @@ export default function Home() {
                 src="/logo.svg"
                 alt="Raspirus Logo"
               />
-              <span class="block text-3xl font-bold text-black mb-3">
+              <span itemProp="name" class="block text-3xl font-bold text-black mb-3">
                 Raspirus
               </span>
-              <span class="block text-white text-lg -mb-1.5">
+              <span itemProp="description" class="block text-white text-lg -mb-1.5">
                 A lightweight and intuitive Virusscanner - Currently in BETA
               </span>
             </div>
