@@ -16,8 +16,8 @@ interface GithubData {
   linux_size: number;
   linux_deb_link: string;
   linux_deb_size: number;
-  github_link: string;
-  github_size: number;
+  raspberry_link: string;
+  raspberry_size: number;
 }
 // TODO: Fix Github Rate limit with personal auth token
 export const handler: Handlers<GithubData | null> = {
@@ -26,6 +26,7 @@ export const handler: Handlers<GithubData | null> = {
       "https://api.github.com/repos/Raspirus/Raspirus/releases",
     );
     if (resp.status === 404) {
+      console.error("GitHub Repo not found");
       return ctx.render(null);
     }
     if (resp.status === 403) {
@@ -37,18 +38,18 @@ export const handler: Handlers<GithubData | null> = {
       const gdata: GithubData = {
         date: new Date(json_res[0].published_at),
         version: json_res[0].tag_name,
-        win_link: json_res[0].assets[2].browser_download_url,
-        win_size: json_res[0].assets[2].size,
-        win_msi_link: json_res[0].assets[4].browser_download_url,
-        win_msi_size: json_res[0].assets[4].size,
-        mac_link: json_res[0].assets[3].browser_download_url,
-        mac_size: json_res[0].assets[3].size,
+        win_link: json_res[0].assets[3].browser_download_url,
+        win_size: json_res[0].assets[3].size,
+        win_msi_link: json_res[0].assets[5].browser_download_url,
+        win_msi_size: json_res[0].assets[5].size,
+        mac_link: json_res[0].assets[4].browser_download_url,
+        mac_size: json_res[0].assets[4].size,
         linux_link: json_res[0].assets[0].browser_download_url,
         linux_size: json_res[0].assets[0].size,
         linux_deb_link: json_res[0].assets[1].browser_download_url,
         linux_deb_size: json_res[0].assets[1].size,
-        github_link: json_res[0].assets[5].browser_download_url,
-        github_size: json_res[0].assets[5].size,
+        raspberry_link: json_res[0].assets[2].browser_download_url,
+        raspberry_size: json_res[0].assets[2].size,
       };
       return ctx.render(gdata);
     } catch (err) {
@@ -101,11 +102,11 @@ export default function Downloads({ data }: PageProps<GithubData | null>) {
             size2={data?.linux_deb_size ?? 0}
           />
           <Download
-            title="Source code"
-            image="img/github.png"
+            title="Raspberry Pi (ARM)"
+            image="img/raspberrypi.png"
             desc={desc}
-            action={data?.github_link ?? ""}
-            size={data?.github_size ?? 0}
+            action={data?.raspberry_link ?? ""}
+            size={data?.raspberry_size ?? 0}
             action2={null}
             size2={null}
           />

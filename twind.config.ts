@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: (_theme) => ({
-        default: "url('/background.png')",
+        default: "url('/background.webp')",
       }),
       colors: {
         transparent: "transparent",
