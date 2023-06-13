@@ -71,7 +71,11 @@ export default function Downloads({ data }: PageProps<GithubData | null>) {
   return (
     <>
       <Header title="Downloads | Raspirus" />
-      <div itemScope itemType="https://schema.org/SoftwareApplication" class="min-h-screen bg-cover bg-center bg-no-repeat bg-default">
+      <div
+        itemScope
+        itemType="https://schema.org/SoftwareApplication"
+        class="min-h-screen bg-cover bg-center bg-no-repeat bg-default"
+      >
         <Navbar active="/downloads" />
         <div class="flex flex-wrap">
           <Download

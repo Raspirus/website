@@ -17,8 +17,12 @@ export default function About() {
       <div class="min-h-screen bg-cover bg-center bg-no-repeat bg-default">
         <Navbar active="/about" />
         <div className="flex justify-center h-full">
-          <div itemScope itemType="https://schema.org/SoftwareApplication" className="w-full sm:w-1/3 bg-white bg-opacity-50 my-6 p-6">
-            <h1 className="text-center mt-0 mb-4 text-5xl">About</h1>
+          <div
+            itemScope
+            itemType="https://schema.org/SoftwareApplication"
+            className="w-full sm:w-1/3 bg-white bg-opacity-50 my-6 p-6"
+          >
+            <h1 className="text-center mt-0 mb-4 text-5xl">ABOUT</h1>
             <p itemProp="about" className="text-justify mb-1">
               Introducing Raspirus, an innovative application designed to
               address the security concerns of working on offline computers

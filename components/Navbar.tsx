@@ -6,14 +6,14 @@ type Props = {
 // TODO: Add Hamburger for mobile devices
 export default function Navbar({ active }: Props) {
   const menus = [
-    { name: "Home", href: "/" },
-    { name: "Downloads", href: "/downloads" },
+    { name: "HOME", href: "/" },
+    { name: "DOWNLOADS", href: "/downloads" },
     {
-      name: "Docs",
+      name: "DOCS",
       href: "https://raspirus.github.io/docs/",
       target: "_blank",
     },
-    { name: "About", href: "/about" },
+    { name: "ABOUT", href: "/about" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function Navbar({ active }: Props) {
       <div class="flex items-center flex-1">
         <img alt="Raspirus Logo" src="/logo.svg" class="w-8 h-8" />
         <a href="/" class="text-2xl text-white ml-1 font-bold">
-          Raspirus
+          RASPIRUS
         </a>
       </div>
       <ul class="flex items-center gap-6">

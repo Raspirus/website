@@ -2,7 +2,10 @@ import IconHeart from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/heart.tsx"
 
 export default function Footer() {
   return (
-    <div itemProp="funding" class="mt-16 flex justify-center items-center border-none bg-transparent text-black gap-4">
+    <div
+      itemProp="funding"
+      class="mt-16 flex justify-center items-center border-none bg-transparent text-black gap-4"
+    >
       <a
         href="https://github.com/sponsors/Raspirus"
         target="_blank"
