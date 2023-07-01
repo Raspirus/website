@@ -20,6 +20,7 @@ export default function Header({ title }: Headerprops) {
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="English" />
       <meta name="author" content="Benjamin Demetz" />
+      <meta name="HandheldFriendly" content="true"/> 
 
       <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
       <link

@@ -106,7 +106,7 @@ export default function Downloads({ data }: PageProps<GithubData | null>) {
             size2={data?.linux_deb_size ?? 0}
           />
           <Download
-            title="Raspberry Pi (ARM)"
+            title="Raspberry Pi (ARM 64)"
             image="img/raspberrypi.png"
             desc={desc}
             action={data?.raspberry_link ?? ""}
