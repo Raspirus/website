@@ -60,7 +60,7 @@ export const handler: Handlers<GithubData | null> = {
 
 export default function Downloads({ data }: PageProps<GithubData | null>) {
   const day = data?.date.getDate().toString();
-  const month = (data?.date.getMonth() ?? 0 + 1).toString(); // Months are zero-based, so add 1
+  const month = (data?.date.getMonth() ?? 0) + 1 + ""; // Months are zero-based, so add 1
   const year = data?.date.getFullYear().toString();
 
   const formattedDate = `${day?.padStart(2, "0")}-${
