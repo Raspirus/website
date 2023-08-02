@@ -19,7 +19,7 @@ export default function Home() {
             <div class="mb-8 mx-8 text-center">
               <img
                 class="h-48 mx-auto mb-6"
-                src="/logo.svg"
+                src="/transparent-logo.png"
                 alt="Raspirus Logo"
               />
               <span
@@ -32,7 +32,7 @@ export default function Home() {
                 itemProp="description"
                 class="block text-white text-lg -mb-1.5"
               >
-                A lightweight and intuitive Virusscanner - Currently in BETA
+                A lightweight and intuitive Virusscanner - Open Source!
               </span>
             </div>
             <div class="flex justify-center items-center flex-col">

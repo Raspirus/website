@@ -19,7 +19,7 @@ export default function Navbar({ active }: Props) {
   return (
     <div class="bg-black w-full py-6 px-8 flex flex-col md:flex-row gap-4">
       <div class="flex items-center flex-1">
-        <img alt="Raspirus Logo" src="/logo.svg" class="w-8 h-8" />
+        <img alt="Raspirus Logo" src="/transparent-logo.png" class="w-8 h-8" />
         <a href="/" class="text-2xl text-white ml-1 font-bold">
           RASPIRUS
         </a>

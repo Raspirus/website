@@ -15,7 +15,7 @@ export default function Information(
       <div className="flex items-center">
         {aicon}
         <p itemProp={iprop}>
-          <b>{akey}:</b>
+          <b>{akey}: </b>
           {avalue}
         </p>
       </div>
