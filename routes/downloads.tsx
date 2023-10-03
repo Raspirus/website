@@ -93,10 +93,10 @@ export default function Downloads({ data }: PageProps<GithubData | null>) {
       <div
         itemScope
         itemType="https://schema.org/SoftwareApplication"
-        class="min-h-screen bg-cover bg-center bg-no-repeat bg-default"
+        class="flex flex-col min-h-screen bg-cover bg-center bg-no-repeat bg-default"
       >
         <Navbar active="/downloads" />
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap justify-center items-center flex-1">
           <Download
             title="Windows"
             image="img/windows.png"

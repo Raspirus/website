@@ -14,7 +14,7 @@ export default function About() {
   return (
     <>
       <Header title="About | Raspirus" />
-      <div class="min-h-screen bg-cover bg-center bg-no-repeat bg-default">
+      <div className="min-h-screen bg-cover bg-center bg-no-repeat bg-default">
         <Navbar active="/about" />
         <div className="flex justify-center h-full">
           <div
