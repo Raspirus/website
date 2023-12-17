@@ -9,7 +9,7 @@
           <NuxtImg :src="`/img/${imageName}`" alt="OS Logo Image" class="h-32"/>
         </div>
         <div class="w-2/3 p-4">
-          <p class="text-sm">{{ description }}</p>
+          <p class="text-lg">{{ description }}</p>
         </div>
       </div>
 
@@ -21,10 +21,13 @@
         </div>
         <!-- Display two buttons aligned to the right of the card one next to each other-->
         <div class="flex flex-row">
-          <UButton class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mr-4 rounded" :to=downloadLink>
+          <UButton class="font-bold py-2 px-4 mr-4" :to=downloadLink>
+            <Icon v-if="!isExternal" name="heroicons-solid:download" class="w-6 h-6" />
+            <Icon v-else name="heroicons-solid:external-link" class="w-6 h-6" />
             {{ displayExtension(downloadLink) }} {{ downloadSize == 0 ? "" : "- " + (downloadSize / 1048576).toFixed(2) + "MB" }}
           </UButton>
-          <UButton v-if="downloadLink2" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <UButton v-if="downloadLink2" class="font-bold py-2 px-4">
+            <Icon v-if="!isExternal" name="heroicons-solid:download" class="w-6 h-6" />
             {{ displayExtension(downloadLink2) }} - {{ (downloadSize2 / 1048576).toFixed(2) }}MB
           </UButton>
         </div>
@@ -72,6 +75,10 @@ defineProps({
     type: String,
     default: "0",
   },
+  isExternal: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 const getFileExtension = (url: string) =>
@@ -98,6 +105,3 @@ const getFileExtension = (url: string) =>
   };
 
 </script>
-
-<style>
-</style>

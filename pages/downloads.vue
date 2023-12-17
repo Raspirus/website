@@ -69,7 +69,8 @@
       downloadLink="https://community.chocolatey.org/packages/raspirus/"
       :downloadSize=0
       updateDate="Not provided"
-      latestVersion="1.1.0"
+      latestVersion="1.1.1"
+      :isExternal="true"
     />
     <DownloadCard 
       title="Snap Store (Linux)"
@@ -80,6 +81,7 @@
       :downloadSize=0
       updateDate="Not provided"
       latestVersion="1.1.1"
+      :isExternal="true"
     />
 
     <DownloadCard
@@ -91,6 +93,7 @@
       :downloadSize=0
       updateDate="Not provided"
       latestVersion="1.1.1"
+      :isExternal="true"
     />
 
   </div>
