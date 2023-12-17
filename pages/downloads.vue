@@ -194,7 +194,7 @@ async function fetchGithubData() {
 }
 
 const githubData = ref<GithubData | null>(null);
-// githubData.value = await fetchGithubData();
+githubData.value = await fetchGithubData();
 const day = githubData.value?.date.getDate().toString();
 const month = (githubData.value?.date.getMonth()?? 0) + 1 + " ";
 const year = githubData.value?.date.getFullYear().toString();

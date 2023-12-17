@@ -1,7 +1,7 @@
 <template>
   <!-- https://icones.js.org/collection/heroicons-solid -->
-  <div class="flex flex-wrap justify-center items-center flex-1 py-8 text-gray-600">
-    <div>
+  <div class="flex flex-wrap justify-center items-center flex-1 py-8 text-gray-600 my-auto">
+    <div class="flex flex-col justify-center items-center">
       <div class="mb-8 mx-8 text-center">
         <img class="h-48 mx-auto mb-6" src="~/assets/transparent-logo.png" alt="Raspirus Logo" />
         <span class="block text-3xl font-bold text-black dark:text-white mb-3">
@@ -34,9 +34,6 @@
 </template>
 
 <script lang="ts" setup>
-import { _mainred } from '#tailwind-config/theme/accentColor';
-
-
 </script>
 
 <style></style>
