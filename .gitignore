@@ -1,30 +1,24 @@
-# Deno
-.deno_dir/
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
 
-# Fresh
-.development/
-
-# Build artifacts
-dist/
-
-# IDE-specific files
-.vscode/
-.idea/
-
-# Dependency directories
-/deps/
-/.deno/
+# Node dependencies
+node_modules
 
 # Logs
+logs
 *.log
 
-# Miscellaneous
+# Misc
 .DS_Store
-Thumbs.db
+.fleet
+.idea
 
-# dotenv environment variable files
+# Local env files
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.env.*
+!.env.example
