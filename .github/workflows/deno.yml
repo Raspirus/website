@@ -11,15 +11,18 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Needed for auth with Deno Deploy
+      contents: read # Needed to clone the repository
     steps:
       - uses: actions/checkout@v3
       - run: corepack enable
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
-      - run: pnpm install
-      - run: pnpm build
+          cache: npm
+      - run: npm install
+      - run: npm run build
         env:
           NITRO_PRESET: deno_deploy
       - name: Deploy to Deno Deploy
