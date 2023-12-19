@@ -12,21 +12,13 @@
         </span>
       </div>
       <div class="flex justify-center items-center flex-col">
-        <div class="flex">
-          <UButton
-            class="font-bold py-3 px-4 flex justify-start items-center cursor-pointer"
-            href="/downloads">
-            <Icon name="heroicons-solid:download" class="w-6 h-6" />
-            <span>Download Now</span>
-          </UButton>
           <UButton
             color="mainred"
-            class="font-bold py-3 px-4 flex justify-start items-center cursor-pointer ml-4"
-            href="https://github.com/sponsors/Raspirus" target="_blank">
+            class="font-bold py-3 px-4 flex justify-start items-center cursor-pointer"
+            to="https://github.com/sponsors/Raspirus" target="_blank">
             <Icon name="heroicons-solid:heart" class="w-6 h-6" />
             <span>Donate</span>
           </UButton>
-        </div>
         <SocialIcons />
       </div>
     </div>

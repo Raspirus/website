@@ -26,7 +26,7 @@
             <Icon v-else name="heroicons-solid:external-link" class="w-6 h-6" />
             {{ displayExtension(downloadLink) }} {{ downloadSize == 0 ? "" : "- " + (downloadSize / 1048576).toFixed(2) + "MB" }}
           </UButton>
-          <UButton v-if="downloadLink2" class="font-bold py-2 px-4">
+          <UButton v-if="downloadLink2" class="font-bold py-2 px-4" :to="downloadLink2">
             <Icon v-if="!isExternal" name="heroicons-solid:download" class="w-6 h-6" />
             {{ displayExtension(downloadLink2) }} - {{ (downloadSize2 / 1048576).toFixed(2) }}MB
           </UButton>
