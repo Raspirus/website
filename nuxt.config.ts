@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     'nuxt-icon',
     '@nuxtjs/robots',
-    'nuxt-simple-sitemap',
+    '@nuxtjs/sitemap',
     '@nuxt/image',
   ],
   ui: {
@@ -16,7 +16,6 @@ export default defineNuxtConfig({
 
 // https://nuxt.com/modules/icon
 // https://nuxt.com/modules/robots
-// https://nuxt.com/modules/simple-sitemap
 
 // https://nuxt.com/modules/partytown
 // https://nuxt.com/modules/animejs
