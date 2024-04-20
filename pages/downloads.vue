@@ -7,7 +7,8 @@
     They are automatically tested and built by GitHub Actions.
     </p>
 
-    <DownloadCard 
+    <DownloadCard
+      id="windows"
       title="Windows" 
       imageName="windows.png"
       description="On Windows, Raspirus is available as a .exe and .msi installer. You can choose between the two,
@@ -20,6 +21,7 @@
       :latestVersion=data?.version 
     />
     <DownloadCard 
+      id="macos"
       title="macOS" 
       imageName="apple.png" 
       description="On macOS, Raspirus is available as a .dmg installer. Unfortunately, we don't have an Apple device to test it on, 
@@ -30,6 +32,7 @@
       :latestVersion=data?.version 
     />
     <DownloadCard 
+      id="linux"
       title="Debian/Linux (AMD 64)" 
       imageName="linux.png" 
       description="On Debian-based Linux distributions, Raspirus is available as a .deb installer and as an AppImage. Generally speaking,
@@ -43,6 +46,7 @@
       :latestVersion=data?.version 
     />
     <DownloadCard 
+      id="raspberrypi"
       title="Raspberry Pi" 
       imageName="raspberrypi.png" 
       description="On Raspberry Pi, we offer two deb packages, one for ARM64 and one for ARMHF. If you don't know which one to choose,
@@ -55,13 +59,14 @@
       :updateDate=formattedDate 
       :latestVersion=data?.version 
     />
-    <h2 class="text-2xl font-bold p-2 pl-10">External Downloads:</h2>
+    <h2 id="external-downloads" class="text-2xl font-bold p-2 pl-10">External Downloads:</h2>
     <p class="text-lg p-2 pl-10">The following downloads are hosted on external websites, depending on your situation, they
       might be more convenient for you. They are not automatically tested and built by GitHub Actions, so they might be outdated.
       We recommend checking the version number on the GitHub Releases Page before downloading.
     </p>
 
     <DownloadCard 
+      id="chocolatey"
       title="Chocolatey (Windows)"
       imageName="chocolatey.png"
       description="Chocolatey is a package manager for Windows. If you have Chocolatey installed, you can install Raspirus with the following command:
@@ -73,6 +78,7 @@
       :isExternal="true"
     />
     <DownloadCard
+      id="arch"
       title="Arch (AUR)"
       imageName="arch.png"
       description="For all the Arch enthusiasts out there, Raspirus is provided trough the AUR (Arch User Repository)"
@@ -83,8 +89,8 @@
       :isExternal="true"
     />
 
-
     <DownloadCard 
+      id="snapstore"
       title="Snap Store (Linux)"
       imageName="snapcraft.png"
       description="Snap is a package manager for Linux. If you have Snap installed, you can install Raspirus with the following command:
@@ -97,6 +103,7 @@
     />
 
     <DownloadCard
+      id="sourceforge"
       title="SourceForge"
       imageName="sourceforge.png"
       description="SourceForge is a website that hosts open-source software. You can find Raspirus on SourceForge, but we don't recommend downloading it from there.
