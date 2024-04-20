@@ -69,9 +69,21 @@
       downloadLink="https://community.chocolatey.org/packages/raspirus/"
       :downloadSize=0
       updateDate="Not provided"
-      latestVersion="1.1.1"
+      latestVersion="v1.1.3"
       :isExternal="true"
     />
+    <DownloadCard
+      title="Arch (AUR)"
+      imageName="arch.png"
+      description="For all the Arch enthusiasts out there, Raspirus is provided trough the AUR (Arch User Repository)"
+      downloadLink="https://aur.archlinux.org/packages/raspirus"
+      :downloadSize=0
+      updateDate="Not provided"
+      latestVersion="v1.1.3"
+      :isExternal="true"
+    />
+
+
     <DownloadCard 
       title="Snap Store (Linux)"
       imageName="snapcraft.png"
@@ -80,7 +92,7 @@
       downloadLink="https://snapcraft.io/raspirus/"
       :downloadSize=0
       updateDate="Not provided"
-      latestVersion="1.1.1"
+      latestVersion="v1.1.3"
       :isExternal="true"
     />
 
@@ -92,7 +104,7 @@
       downloadLink="https://sourceforge.net/projects/raspirus/"
       :downloadSize=0
       updateDate="Not provided"
-      latestVersion="1.1.1"
+      latestVersion="v1.1.3"
       :isExternal="true"
     />
 
