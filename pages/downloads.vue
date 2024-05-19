@@ -74,7 +74,7 @@
       downloadLink="https://community.chocolatey.org/packages/raspirus/"
       :downloadSize=0
       updateDate="Not provided"
-      latestVersion="v1.1.3"
+      latestVersion="v1.2.0"
       :isExternal="true"
     />
 
@@ -99,7 +99,7 @@
       downloadLink="https://snapcraft.io/raspirus/"
       :downloadSize=0
       updateDate="Not provided"
-      latestVersion="v1.1.3"
+      latestVersion="v1.2.0"
       :isExternal="true"
     />
 
@@ -112,7 +112,7 @@
       downloadLink="https://sourceforge.net/projects/raspirus/"
       :downloadSize=0
       updateDate="Not provided"
-      latestVersion="v1.1.3"
+      latestVersion="v1.2.0"
       :isExternal="true"
     />
 
