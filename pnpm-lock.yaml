@@ -20,8 +20,8 @@ devDependencies:
     specifier: latest
     version: 1.3.6(vite@5.3.1)
   '@nuxtjs/sitemap':
-    specifier: ^5.1.2
-    version: 5.2.0(@nuxt/devtools@1.3.6)(@vue/compiler-core@3.4.30)(h3@1.12.0)(nuxt@3.12.2)(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30)(webpack@5.92.1)
+    specifier: ^5.2.1
+    version: 5.2.1(@nuxt/devtools@1.3.6)(@vue/compiler-core@3.4.30)(h3@1.12.0)(nuxt@3.12.2)(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30)(webpack@5.92.1)
   nuxt:
     specifier: ^3.8.2
     version: 3.12.2(@opentelemetry/api@1.9.0)(vite@5.3.1)
@@ -1607,8 +1607,8 @@ packages:
       - uWebSockets.js
     dev: false
 
-  /@nuxtjs/sitemap@5.2.0(@nuxt/devtools@1.3.6)(@vue/compiler-core@3.4.30)(h3@1.12.0)(nuxt@3.12.2)(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30)(webpack@5.92.1):
-    resolution: {integrity: sha512-lkoUEceiKRtyU5DvosXOpblgUQbhNYzN6mOiz9BXo8k3FBfkZUHDSN2lr7ekCGoCs3qAMIAepJ8JKpqOkKE09Q==}
+  /@nuxtjs/sitemap@5.2.1(@nuxt/devtools@1.3.6)(@vue/compiler-core@3.4.30)(h3@1.12.0)(nuxt@3.12.2)(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30)(webpack@5.92.1):
+    resolution: {integrity: sha512-GFlXFR7EVxt50V4VJSk2Oyg4UoifFHMcqYa+wyHwCU74loi0bPMsOhUo9QiI/8liuyj92L/JvWmcO77HCx7T+A==}
     dependencies:
       '@nuxt/devtools-kit': 1.3.6(magicast@0.3.4)(vite@5.3.1)
       '@nuxt/devtools-ui-kit': 1.3.6(@nuxt/devtools@1.3.6)(@vue/compiler-core@3.4.30)(nuxt@3.12.2)(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30)(webpack@5.92.1)
@@ -1625,7 +1625,7 @@ packages:
       pkg-types: 1.1.1
       radix3: 1.1.2
       semver: 7.6.2
-      shiki: 1.6.0
+      shiki: 1.9.0
       sirv: 2.0.4
       site-config-stack: 2.2.12(vue@3.4.30)
       ufo: 1.5.3
@@ -2358,8 +2358,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@shikijs/core@1.6.0:
-    resolution: {integrity: sha512-NIEAi5U5R7BLkbW1pG/ZKu3eb1lzc3/+jD0lFsuxMT7zjaf9bbNwdNyMr7zh/Zl8EXQtQ+MYBAt5G+JLu+5DlA==}
+  /@shikijs/core@1.9.0:
+    resolution: {integrity: sha512-cbSoY8P/jgGByG8UOl3jnP/CWg/Qk+1q+eAKWtcrU3pNoILF8wTsLB0jT44qUBV8Ce1SvA9uqcM9Xf+u3fJFBw==}
     dev: true
 
   /@sigstore/bundle@2.3.2:
@@ -4403,8 +4403,8 @@ packages:
     resolution: {integrity: sha512-l0uy0kAoo6toCgVOYaAayqtPa2a1L15efxUMEnQebKwLQX2X0OpS6wMMQdc4juJXmxd9i40DuaUHq+mjIya9TQ==}
     dev: true
 
-  /es-module-lexer@1.5.3:
-    resolution: {integrity: sha512-i1gCgmR9dCl6Vil6UKPI/trA69s08g/syhiDK9TG0Nf1RJjjFI+AzoWW7sPufzkgYAn861skuCwJa0pIIHYxvg==}
+  /es-module-lexer@1.5.4:
+    resolution: {integrity: sha512-MVNK56NiMrOwitFB7cqDwq0CQutbw+0BvLshJSse0MUNU+y1FC3bUS/AQg7oUng+/wKrrki7JfmwtVHkVfPLlw==}
     dev: true
 
   /esbuild@0.20.2:
@@ -6249,7 +6249,7 @@ packages:
       nuxt-site-config-kit: 2.2.12(vue@3.4.30)
       pathe: 1.1.2
       pkg-types: 1.1.1
-      shiki: 1.6.0
+      shiki: 1.9.0
       sirv: 2.0.4
       site-config-stack: 2.2.12(vue@3.4.30)
       ufo: 1.5.3
@@ -7455,10 +7455,10 @@ packages:
     resolution: {integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==}
     dev: true
 
-  /shiki@1.6.0:
-    resolution: {integrity: sha512-P31ROeXcVgW/k3Z+vUUErcxoTah7ZRaimctOpzGuqAntqnnSmx1HOsvnbAB8Z2qfXPRhw61yptAzCsuKOhTHwQ==}
+  /shiki@1.9.0:
+    resolution: {integrity: sha512-i6//Lqgn7+7nZA0qVjoYH0085YdNk4MC+tJV4bo+HgjgRMJ0JmkLZzFAuvVioJqLkcGDK5GAMpghZEZkCnwxpQ==}
     dependencies:
-      '@shikijs/core': 1.6.0
+      '@shikijs/core': 1.9.0
     dev: true
 
   /shimmer@1.2.1:
@@ -8657,7 +8657,7 @@ packages:
       browserslist: 4.23.1
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.17.0
-      es-module-lexer: 1.5.3
+      es-module-lexer: 1.5.4
       eslint-scope: 5.1.1
       events: 3.3.0
       glob-to-regexp: 0.4.1
