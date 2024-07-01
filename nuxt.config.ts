@@ -8,9 +8,13 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     '@nuxt/image',
+    'nuxt-gtag',
   ],
   ui: {
     safelistColors: ['primary', 'secondary'],
+  },
+  gtag: {
+    id: 'G-VE0JJVDNXY'
   }
 })
 
