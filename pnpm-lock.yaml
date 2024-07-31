@@ -32,11 +32,11 @@ devDependencies:
     specifier: ^0.6.7
     version: 0.6.10(vite@5.3.5)(vue@3.4.35)
   vue:
-    specifier: ^3.4.35
+    specifier: ^3.3.12
     version: 3.4.35
   vue-router:
-    specifier: ^4.2.5
-    version: 4.4.0(vue@3.4.35)
+    specifier: ^4.4.1
+    version: 4.4.1(vue@3.4.35)
 
 packages:
 
@@ -5034,13 +5034,13 @@ packages:
       unenv: 1.10.0
       unimport: 3.9.1(rollup@4.19.1)
       unplugin: 1.12.0
-      unplugin-vue-router: 0.10.1(vue-router@4.4.0)(vue@3.4.35)
+      unplugin-vue-router: 0.10.1(vue-router@4.4.1)(vue@3.4.35)
       unstorage: 1.10.2(ioredis@5.4.1)
       untyped: 1.4.2
       vue: 3.4.35
       vue-bundle-renderer: 2.1.0
       vue-devtools-stub: 0.1.0
-      vue-router: 4.4.0(vue@3.4.35)
+      vue-router: 4.4.1(vue@3.4.35)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -6576,7 +6576,7 @@ packages:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
-  /unplugin-vue-router@0.10.1(vue-router@4.4.0)(vue@3.4.35):
+  /unplugin-vue-router@0.10.1(vue-router@4.4.1)(vue@3.4.35):
     resolution: {integrity: sha512-ATqvUsHBz1cdzeUfbYaOOCJ3t6Ax+iGCmPVXS2uJJJATqjnhHXz10DcPoDyrrD0ni2dzT8zrn4jXRczD/H1fhg==}
     peerDependencies:
       vue-router: ^4.4.0
@@ -6596,7 +6596,7 @@ packages:
       pathe: 1.1.2
       scule: 1.3.0
       unplugin: 1.12.0
-      vue-router: 4.4.0(vue@3.4.35)
+      vue-router: 4.4.1(vue@3.4.35)
       yaml: 2.5.0
     transitivePeerDependencies:
       - rollup
@@ -6954,8 +6954,8 @@ packages:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
     dev: true
 
-  /vue-router@4.4.0(vue@3.4.35):
-    resolution: {integrity: sha512-HB+t2p611aIZraV2aPSRNXf0Z/oLZFrlygJm+sZbdJaW6lcFqEDQwnzUBXn+DApw+/QzDU/I9TeWx9izEjTmsA==}
+  /vue-router@4.4.1(vue@3.4.35):
+    resolution: {integrity: sha512-njTLt/6gYGgIhv+U8nc5J6JpJpntFgy4fptRJ9Dp2qWQRo/PekB5DbKRYRPt0kM6feXysPKl7A5BjOmOJL5Ttw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
