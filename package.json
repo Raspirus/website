@@ -21,6 +21,6 @@
   "dependencies": {
     "@nuxt/image": "^1.1.0",
     "@nuxt/ui": "^2.11.1",
-    "@nuxtjs/robots": "^3.0.0"
+    "@nuxtjs/robots": "^4.0.0"
   }
 }
