@@ -14,7 +14,7 @@
     "nuxt": "^3.8.2",
     "nuxt-icon": "^0.6.7",
     "nuxt-gtag": "^2.0.6",
-    "@nuxtjs/sitemap": "^5.1.2",
+    "@nuxtjs/sitemap": "^6.0.0",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5"
   },
