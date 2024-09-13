@@ -12,7 +12,7 @@ dependencies:
     specifier: ^2.11.1
     version: 2.18.4(vite@5.4.3)(vue@3.5.4)
   '@nuxtjs/robots':
-    specifier: ^4.1.7
+    specifier: ^4.0.0
     version: 4.1.7(vite@5.4.3)(vue@3.5.4)
 
 devDependencies:
@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^3.3.12
     version: 3.5.4
   vue-router:
-    specifier: ^4.2.5
-    version: 4.4.4(vue@3.5.4)
+    specifier: ^4.4.5
+    version: 4.4.5(vue@3.5.4)
 
 packages:
 
@@ -2650,8 +2650,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /bare-fs@2.3.4:
-    resolution: {integrity: sha512-7YyxitZEq0ey5loOF5gdo1fZQFF7290GziT+VbAJ+JbYTJYaPZwuEz2r/Nq23sm4fjyTgUf2uJI2gkT3xAuSYA==}
+  /bare-fs@2.3.5:
+    resolution: {integrity: sha512-SlE9eTxifPDJrT6YgemQ1WGFleevzwY+XAP1Xqgl56HtcrisC2CHCZ2tq6dBpcH2TnNxwUEUGhweo+lrQtYuiw==}
     requiresBuild: true
     dependencies:
       bare-events: 2.4.2
@@ -5081,13 +5081,13 @@ packages:
       unenv: 1.10.0
       unimport: 3.11.1(rollup@4.21.2)
       unplugin: 1.13.1
-      unplugin-vue-router: 0.10.8(vue-router@4.4.4)(vue@3.5.4)
+      unplugin-vue-router: 0.10.8(vue-router@4.4.5)(vue@3.5.4)
       unstorage: 1.12.0(ioredis@5.4.1)
       untyped: 1.4.2
       vue: 3.5.4
       vue-bundle-renderer: 2.1.0
       vue-devtools-stub: 0.1.0
-      vue-router: 4.4.4(vue@3.5.4)
+      vue-router: 4.4.5(vue@3.5.4)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -6407,7 +6407,7 @@ packages:
       pump: 3.0.0
       tar-stream: 3.1.7
     optionalDependencies:
-      bare-fs: 2.3.4
+      bare-fs: 2.3.5
       bare-path: 2.1.3
     dev: false
     optional: true
@@ -6656,7 +6656,7 @@ packages:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
-  /unplugin-vue-router@0.10.8(vue-router@4.4.4)(vue@3.5.4):
+  /unplugin-vue-router@0.10.8(vue-router@4.4.5)(vue@3.5.4):
     resolution: {integrity: sha512-xi+eLweYAqolIoTRSmumbi6Yx0z5M0PLvl+NFNVWHJgmE2ByJG1SZbrn+TqyuDtIyln20KKgq8tqmL7aLoiFjw==}
     peerDependencies:
       vue-router: ^4.4.0
@@ -6677,7 +6677,7 @@ packages:
       pathe: 1.1.2
       scule: 1.3.0
       unplugin: 1.13.1
-      vue-router: 4.4.4(vue@3.5.4)
+      vue-router: 4.4.5(vue@3.5.4)
       yaml: 2.5.1
     transitivePeerDependencies:
       - rollup
@@ -7057,8 +7057,8 @@ packages:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
     dev: true
 
-  /vue-router@4.4.4(vue@3.5.4):
-    resolution: {integrity: sha512-3MlnDqwRwZwCQVbtVfpsU+nrNymNjnXSsQtXName5925NVC1+326VVfYH9vSrA0N13teGEo8z5x7gbRnGjCDiQ==}
+  /vue-router@4.4.5(vue@3.5.4):
+    resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
