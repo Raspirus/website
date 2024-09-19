@@ -55,7 +55,7 @@
       <li><b>Platforms: </b>Windows, macOS, Linux (Debian based)</li>
       <li><b>Languages: </b>English (default), German & Italian</li>
       <li><b>Performance Requirements: </b>Very low</li>
-      <li><b>Technology Stack: </b>Rust (backend), Next.js (frontend), Tauri (builder), Docker</li>
+      <li><b>Technology Stack: </b>Rust (backend), iced-rs (frontend), Docker</li>
       <li><b>License: </b><a href="https://github.com/Raspirus/Raspirus/blob/main/LICENSE" target="_blank" class="text-mainred-500">GPL-3.0</a></li>
       <li><b>Source: </b><a href="https://github.com/Raspirus" target="_blank" class="text-mainred-500">GitHub</a></li>
     </ul>
