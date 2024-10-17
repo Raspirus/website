@@ -1,24 +1,39 @@
-import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
+import { IconDownload, IconInfoSquareRounded } from "npm:@tabler/icons-preact";
+import LinkButton from "../components/LinkButton.tsx";
+import SocialIcons from "../components/SocialIcons.tsx";
 
 export default function Home() {
-  const count = useSignal(3);
   return (
-    <div class="px-4 py-8 mx-auto bg-[#86efac]">
-      <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-        <img
-          class="my-6"
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
-        />
-        <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
+    <div class="flex flex-wrap justify-center items-center flex-1 py-8 text-gray-600 my-auto">
+      <div class="flex flex-col justify-center items-center">
+        <div class="mb-8 mx-8 text-center">
+          <img class="h-48 mx-auto mb-6" src="/logo.svg" alt="Raspirus Logo" />
+          <span class="block text-3xl font-bold text-black dark:text-white mb-3">
+            RASPIRUS
+          </span>
+          <span class="block text-black dark:text-white text-lg -mb-1.5">
+            A lightweight and intuitive Virusscanner - Open Source!
+          </span>
+        </div>
+        <div class="flex justify-center items-center flex-col">
+          <div class="flex justify-center items-center">
+            <LinkButton
+              color="mainred"
+              class="font-bold py-3 px-4 flex justify-start items-center cursor-pointer"
+              to="https://github.com/sponsors/Raspirus" target="_blank">
+              <IconDownload class="w-6 h-6" />
+              <span>Download</span>
+            </LinkButton>
+            <LinkButton
+              color="maingreen"
+              class="font-bold py-3 px-4 ml-2 flex justify-start items-center cursor-pointer"
+              to="https://forms.gle/hjUSaVUkxjyimDsM9" target="_blank">
+              <IconInfoSquareRounded class="w-6 h-6" />
+              <span>Feedback</span>
+            </LinkButton>
+          </div>
+          <SocialIcons />
+        </div>
       </div>
     </div>
   );
