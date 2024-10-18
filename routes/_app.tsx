@@ -9,7 +9,7 @@ export default function App({ Component }: PageProps) {
         <title>website</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-darkbg">
+      <body class="bg-darkbg text-white">
         <Navbar />
         <Component />
       </body>

@@ -12,7 +12,7 @@ const DownloadButton = (
 ) => {
   return (
     <button
-      className="font-bold py-2 px-4 mr-4 bg-maingreen-600 text-white rounded flex items-center" 
+      className="font-bold py-2 px-4 mr-4 bg-maingreen-600 text-white rounded flex items-center"
       onClick={() => globalThis.location.href = link}
     >
       {!isExternal

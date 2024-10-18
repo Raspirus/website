@@ -110,7 +110,7 @@ const Download = (props: PageProps<GithubData>) => {
   }
 
   return (
-    <div class="text-white">
+    <div>
       <h1 class="text-center text-4xl font-bold p-4">Downloads</h1>
       <h2 class="text-2xl font-bold p-2 pl-10">GitHub Downloads:</h2>
       <p class="text-lg p-2 pl-10">

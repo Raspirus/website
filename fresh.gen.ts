@@ -5,9 +5,12 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $about from "./routes/about.tsx";
-import * as $docs_path_ from "./routes/docs/[path].tsx";
+import * as $commercial from "./routes/commercial.tsx";
+import * as $docs from "./routes/docs.tsx";
+import * as $docs_slug_ from "./routes/docs/[...slug].tsx";
 import * as $download from "./routes/download.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $shop from "./routes/shop.tsx";
 import * as $DownloadButton from "./islands/DownloadButton.tsx";
 import * as $Navbar from "./islands/Navbar.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -17,9 +20,12 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/about.tsx": $about,
-    "./routes/docs/[path].tsx": $docs_path_,
+    "./routes/commercial.tsx": $commercial,
+    "./routes/docs.tsx": $docs,
+    "./routes/docs/[...slug].tsx": $docs_slug_,
     "./routes/download.tsx": $download,
     "./routes/index.tsx": $index,
+    "./routes/shop.tsx": $shop,
   },
   islands: {
     "./islands/DownloadButton.tsx": $DownloadButton,
