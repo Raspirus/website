@@ -1,4 +1,5 @@
 import { useState } from "preact/hooks";
+import { IconExternalLink } from "npm:@tabler/icons-preact";
 
 const Navbar = () => {
   const [show_mobile_menu, set_show_mobile_menu] = useState(false);
@@ -6,7 +7,7 @@ const Navbar = () => {
 
   const menus = [
     { name: "HOME", href: "/" },
-    { name: "DOCS", href: "/docs" },
+    { name: "DOCS", href: "https://raspirus.github.io/docs", target: "_blank" },
     { name: "SHOP", href: "/shop" },
     { name: "COMMERCIAL", href: "/commercial" },
   ];
@@ -49,12 +50,16 @@ const Navbar = () => {
           <li key={menu.name}>
             <a
               href={menu.href}
+              target={menu.target || "_self"}
               class="text-white hover:text-mainred-500 py-1 data-[current]:text-mainred-500 data-[current]:font-bold"
             >
               <div class="flex items-center">
                 <span>
                   {menu.name}
                 </span>
+                {menu.target === "_blank" && (
+                  <IconExternalLink class="w-4 h-4 ml-1" />
+                )}
               </div>
             </a>
           </li>

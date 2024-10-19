@@ -4,9 +4,7 @@ import { join } from "$std/path/mod.ts";
 export interface Doc {
   slug: string;
   title: string;
-  publishedAt: Date;
   content: string;
-  snippet: string;
 }
 
 export async function getDocs(): Promise<Doc[]> {
@@ -30,8 +28,6 @@ export async function getDocs(): Promise<Doc[]> {
   }
 
   await readDirRecursive("./docs"); // Start the recursive search from ./docs
-
-  docs.sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
   return docs;
 }
 
@@ -41,15 +37,13 @@ export async function getDoc(
 ): Promise<Doc | null> {
   const text = await Deno.readTextFile(fullPath);
   const { attrs, body } = extract(text) as {
-    attrs: { title: string; published_at: string; snippet: string };
+    attrs: { title: string; };
     body: string;
   };
 
   return {
     slug,
     title: attrs.title,
-    publishedAt: new Date(attrs.published_at),
     content: body,
-    snippet: attrs.snippet,
   };
 }
