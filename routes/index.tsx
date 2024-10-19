@@ -2,8 +2,6 @@ import { IconDownload, IconInfoSquareRounded } from "npm:@tabler/icons-preact";
 import LinkButton from "../components/LinkButton.tsx";
 import SocialIcons from "../components/SocialIcons.tsx";
 
-// https://forms.gle/hjUSaVUkxjyimDsM9
-
 export default function Home() {
   return (
     <div class="flex flex-wrap justify-center items-center flex-1 py-8 text-gray-400 my-auto">

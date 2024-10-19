@@ -37,7 +37,7 @@ export async function getDoc(
 ): Promise<Doc | null> {
   const text = await Deno.readTextFile(fullPath);
   const { attrs, body } = extract(text) as {
-    attrs: { title: string; };
+    attrs: { title: string };
     body: string;
   };
 

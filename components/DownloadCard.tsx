@@ -24,7 +24,7 @@ const DownloadCard = ({
   downloadLink2 = null,
   downloadSize2 = 0,
   updateDate = "0",
-  latestVersion = "0",
+  latestVersion = "v2.0.0",
   isExternal = false,
 }: DownloadCardProps) => {
   const getFileExtension = (url: string) =>
@@ -51,11 +51,12 @@ const DownloadCard = ({
   };
 
   return (
-    <div class="m-5 p-5 border-solid border-2 rounded border-gray-600" id={id}>
+    <div class="m-5 p-5 border-solid border-2 border-gray-600 rounded-lg divide-y divide-gray-800 ring-1 ring-gray-800 
+    shadow bg-gray-900" id={id}>
       <div class="header mb-2">
         <h1 class="text-2xl font-bold">{title}</h1>
       </div>
-      <div class="flex flex-row">
+      <div class="flex flex-row py-2">
         <div class="w-1/3 mb-2">
           <img src={`/img/${imageName}`} alt="OS Logo Image" class="h-32" />
         </div>
@@ -63,7 +64,7 @@ const DownloadCard = ({
           <p class="text-lg">{description}</p>
         </div>
       </div>
-      <div class="footer flex flex-row justify-between">
+      <div class="footer flex flex-row justify-between pt-2">
         <div class="flex flex-col hidden md:flex">
           <p class="text-xs">Last Update: {updateDate}</p>
           <p class="text-xs">Latest Version: {latestVersion}</p>

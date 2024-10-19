@@ -197,7 +197,6 @@ const Download = (props: PageProps<GithubData>) => {
         downloadLink="https://community.chocolatey.org/packages/raspirus/"
         downloadSize={0}
         updateDate="Not provided"
-        latestVersion="v1.2.0"
         isExternal={true}
       />
 
@@ -209,7 +208,6 @@ const Download = (props: PageProps<GithubData>) => {
         downloadLink="https://aur.archlinux.org/packages/raspirus/"
         downloadSize={0}
         updateDate="Not provided"
-        latestVersion="v1.1.3"
         isExternal={true}
       />
 
@@ -222,7 +220,6 @@ const Download = (props: PageProps<GithubData>) => {
         downloadLink="https://snapcraft.io/raspirus/"
         downloadSize={0}
         updateDate="Not provided"
-        latestVersion="v1.2.0"
         isExternal={true}
       />
 
@@ -235,7 +232,6 @@ const Download = (props: PageProps<GithubData>) => {
         downloadLink="https://sourceforge.net/projects/raspirus/"
         downloadSize={0}
         updateDate="Not provided"
-        latestVersion="v1.2.0"
         isExternal={true}
       />
     </div>
