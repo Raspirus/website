@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raspirus.deno.dev/sitemap.xml
