@@ -15,24 +15,24 @@ const About = () => {
           target="_blank"
           class="m-4 w-1/3 border-solid border-2 rounded border-gray-600 flex flex-col justify-center items-center"
         >
-          <IconGavel class="w-16 h-16 m-4" />
-          <div class="p-2 text-center">Legal Info</div>
+          <IconGavel class="w-16 h-16 m-4 text-mainred-500" />
+          <div class="p-2 text-center text-xl font-bold">Legal Info</div>
         </a>
         <a
           href="https://forms.gle/hjUSaVUkxjyimDsM9"
           target="_blank"
           class="m-4 w-1/3 border-solid border-2 rounded border-gray-600 flex flex-col justify-center items-center"
         >
-          <IconMessageQuestion class="w-16 h-16 m-4" />
-          <div class="p-2 text-center">Feedback</div>
+          <IconMessageQuestion class="w-16 h-16 m-4 text-maingreen-500" />
+          <div class="p-2 text-center text-xl font-bold">Feedback</div>
         </a>
         <a
           href="https://raspirus.github.io/docs/Various/privacy"
           target="_blank"
           class="m-4 w-1/3 border-solid border-2 rounded border-gray-600 flex flex-col justify-center items-center"
         >
-          <IconShieldLock class="w-16 h-16 m-4" />
-          <div class="p-2 text-center">Privacy</div>
+          <IconShieldLock class="w-16 h-16 m-4 text-mainred-500" />
+          <div class="p-2 text-center text-xl font-bold">Privacy</div>
         </a>
       </div>
       <hr class="m-4" />
@@ -42,7 +42,7 @@ const About = () => {
         Welcome to Raspirus, your lightweight signature-based malware scanner. 
         Originally designed to scan attached USB drives using a Raspberry Pi, 
         Raspirus has evolved into a versatile tool capable of scanning local files and folders as well.
-        It started out as a Matura project by Benjamin Demetz in 2022 Italy and has since been developed further.
+        It started out as a Matura project by Benji377 in 2022 Italy and has since been developed further.
         </div>
       </div>
       <hr class="m-4" />

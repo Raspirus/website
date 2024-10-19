@@ -15,7 +15,7 @@ interface AboutCardProps {
 
 const AboutCard = ({ icon, title, description }: AboutCardProps) => {
   return (
-    <div class="m-2 p-4 bg-gray-700 rounded-lg">
+    <div class="m-2 p-4 bg-gray-800 rounded-lg">
       <div class="flex items-center mb-2">
         {(() => {
           switch (icon) {
