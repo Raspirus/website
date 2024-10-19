@@ -5,7 +5,7 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $about from "./routes/about.tsx";
-import * as $commercial from "./routes/commercial.tsx";
+import * as $commercial from "./routes/enterprise.tsx";
 import * as $download from "./routes/download.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $shop from "./routes/shop.tsx";

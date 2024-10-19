@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "HOME", href: "/" },
     { name: "DOCS", href: "https://raspirus.github.io/docs", target: "_blank" },
     { name: "SHOP", href: "/shop" },
-    { name: "COMMERCIAL", href: "/commercial" },
+    { name: "ENTERPRISE", href: "/enterprise" },
   ];
 
   return (
