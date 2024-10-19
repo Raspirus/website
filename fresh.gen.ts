@@ -8,7 +8,7 @@ import * as $about from "./routes/about.tsx";
 import * as $download from "./routes/download.tsx";
 import * as $enterprise from "./routes/enterprise.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $shop from "./routes/shop.tsx";
+import * as $team from "./routes/team.tsx";
 import * as $DownloadButton from "./islands/DownloadButton.tsx";
 import * as $Navbar from "./islands/Navbar.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -21,7 +21,7 @@ const manifest = {
     "./routes/download.tsx": $download,
     "./routes/enterprise.tsx": $enterprise,
     "./routes/index.tsx": $index,
-    "./routes/shop.tsx": $shop,
+    "./routes/team.tsx": $team,
   },
   islands: {
     "./islands/DownloadButton.tsx": $DownloadButton,
