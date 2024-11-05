@@ -9,36 +9,36 @@ const About = () => {
   return (
     <div>
       <h1 class="text-center text-4xl font-bold p-4">About</h1>
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center space-x-4 px-6">
         <a
           href="https://raspirus.github.io/docs/Various/legal"
           target="_blank"
-          class="m-4 w-1/3 border-solid border-2 rounded border-gray-600 flex flex-col justify-center items-center"
+          class="w-1/3 border-solid border-2 rounded border-gray-600 flex flex-col justify-center items-center"
         >
           <IconGavel class="w-16 h-16 m-4 text-mainred-500" />
-          <div class="p-2 text-center text-xl font-bold">Legal Info</div>
+          <div class="p-2 text-center font-bold md:text-xl text-lg">Legal</div>
         </a>
         <a
           href="https://forms.gle/hjUSaVUkxjyimDsM9"
           target="_blank"
-          class="m-4 w-1/3 border-solid border-2 rounded border-gray-600 flex flex-col justify-center items-center"
+          class="w-1/3 border-solid border-2 rounded border-gray-600 flex flex-col justify-center items-center"
         >
           <IconMessageQuestion class="w-16 h-16 m-4 text-maingreen-500" />
-          <div class="p-2 text-center text-xl font-bold">Feedback</div>
+          <div class="p-2 text-center font-bold md:text-xl text-lg">Feedback</div>
         </a>
         <a
           href="https://raspirus.github.io/docs/Various/privacy"
           target="_blank"
-          class="m-4 w-1/3 border-solid border-2 rounded border-gray-600 flex flex-col justify-center items-center"
+          class="w-1/3 border-solid border-2 rounded border-gray-600 flex flex-col justify-center items-center"
         >
           <IconShieldLock class="w-16 h-16 m-4 text-mainred-500" />
-          <div class="p-2 text-center text-xl font-bold">Privacy</div>
+          <div class="p-2 text-center font-bold md:text-xl text-lg">Privacy</div>
         </a>
       </div>
       <hr class="m-4" />
       <div>
         <h2 class="text-center text-2xl font-bold p-4">About the Project</h2>
-        <div class="p-4 mx-40">
+        <div class="p-4 md:mx-20 sm:mx-5 lg:mx-40 xl:mx-40">
         Welcome to Raspirus, your lightweight signature-based malware scanner. 
         Originally designed to scan attached USB drives using a Raspberry Pi, 
         Raspirus has evolved into a versatile tool capable of scanning local files and folders as well.
