@@ -26,6 +26,12 @@ const team = () => {
                 name="Nurkanat Baysenkul"
                 description="💰 Sponsor"
             />
+            <TeamCard
+                profileImage="https://avatars.githubusercontent.com/u/127700913?v=4"
+                profileUrl="https://github.com/dylanchxx"
+                name="Dylanchxx"
+                description="💰 Sponsor"
+            />
 
             <h2 className="text-3xl font-semibold">Contributors</h2>
             <TeamCard
