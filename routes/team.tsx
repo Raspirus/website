@@ -10,13 +10,13 @@ const team = () => {
                 profileImage="https://avatars.githubusercontent.com/u/50681275?v=4"
                 profileUrl="https://github.com/Benji377"
                 name="Benjamin Demetz"
-                description="❤️ Maintainer"
+                description="⚡ Maintainer"
             />
             <TeamCard
                 profileImage="https://avatars.githubusercontent.com/u/77393763?v=4?s=100"
                 profileUrl="https://github.com/GamingGuy003"
                 name="GamingGuy003"
-                description="❤️ Co-Maintainer"
+                description="⚡ Co-Maintainer"
             />
 
             <h2 className="text-3xl font-semibold">Sponsors</h2>
@@ -24,13 +24,13 @@ const team = () => {
                 profileImage="https://avatars.githubusercontent.com/u/71591558?v=4"
                 profileUrl="https://github.com/tuchaVshortah"
                 name="Nurkanat Baysenkul"
-                description="💰 Sponsor"
+                description="❤️ Sponsor"
             />
             <TeamCard
                 profileImage="https://avatars.githubusercontent.com/u/127700913?v=4"
                 profileUrl="https://github.com/dylanchxx"
                 name="Dylanchxx"
-                description="💰 Sponsor"
+                description="❤️ Sponsor"
             />
 
             <h2 className="text-3xl font-semibold">Contributors</h2>
