@@ -201,17 +201,6 @@ const Download = (props: PageProps<GithubData>) => {
       />
 
       <DownloadCard
-        id="arch"
-        title="Arch (AUR)"
-        imageName="arch.png"
-        description="For all the Arch enthusiasts out there, Raspirus is provided trough the AUR (Arch User Repository)"
-        downloadLink="https://aur.archlinux.org/packages/raspirus/"
-        downloadSize={0}
-        updateDate="Not provided"
-        isExternal={true}
-      />
-
-      <DownloadCard
         id="snapstore"
         title="Snap Store (Linux)"
         imageName="snapcraft.png"
