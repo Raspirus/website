@@ -39,7 +39,7 @@ const About = () => {
       <div>
         <h2 class="text-center text-2xl font-bold p-4">About the Project</h2>
         <div class="p-4 md:mx-20 sm:mx-5 lg:mx-40 xl:mx-40">
-        Welcome to Raspirus, your lightweight signature-based malware scanner. 
+        Welcome to Raspirus, your lightweight Yara rule-based malware scanner. 
         Originally designed to scan attached USB drives using a Raspberry Pi, 
         Raspirus has evolved into a versatile tool capable of scanning local files and folders as well.
         It started out as a Matura project by Benji377 in 2022 Italy and has since been developed further.
@@ -52,7 +52,7 @@ const About = () => {
             icon="IconLockOpen"
             title="Free & Open Source"
             description="Raspirus is free and open source software. You can use it for free and you can also contribute to the project.
-        This ensures safety and transparency. The project runs solely on donations."
+        This ensures safety and transparency. The source code is available on GitHub."
           />
         </div>
         <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 flex">
