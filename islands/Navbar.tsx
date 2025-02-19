@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const menus = [
     { name: "HOME", href: "/" },
-    { name: "DOCS", href: "https://raspirus.github.io/docs", target: "_blank" },
+    { name: "DOCS", href: "https://github.com/Raspirus/raspirus/wiki", target: "_blank" },
     { name: "TEAM", href: "/team" },
     { name: "ENTERPRISE", href: "/enterprise" },
   ];
